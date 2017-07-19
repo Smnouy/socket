@@ -15,6 +15,6 @@ while True:
         s.send(str)
         buff = s.recv(1024)
         print buff
-        if buff == 'server close':
+        if buff == 'server close':   #当与服务端断开连接则关闭客户端
                 break
 s.close()
