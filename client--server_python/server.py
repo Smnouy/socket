@@ -15,7 +15,7 @@ print '连接地址：', addr
 while True:
     buff = c.recv(1024)
     print "recv massage:",buff
-    if  buff == 'exit':
+    if  buff == 'exit':     #当客户端传来exit则断开连接
         c.send('server close')
         break
     else:
